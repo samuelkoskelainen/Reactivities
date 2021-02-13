@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useEffect, useState } from 'react';
+import React, { Fragment, useContext, useEffect } from 'react';
 import { Segment, Header, Form, Button, Comment } from 'semantic-ui-react';
 import { RootStoreContext } from '../../app/stores/rootStore';
 import {Form as FinalForm, Field} from 'react-final-form';
@@ -15,7 +15,6 @@ const ActivityDetailedChat = () => {
     addComment, 
     activity
   } = rootStore.activityStore;
-  const [reload, setReload] = useState(false);
   useEffect(() => {
     if (activity!.id) {
       createHubConnection(activity!.id);

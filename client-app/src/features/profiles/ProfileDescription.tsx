@@ -8,7 +8,6 @@ const ProfileDescription = () => {
   const {
     updateProfile, 
     profile, 
-    isCurrentUser
   } = rootStore.profileStore;
   const [editMode, setEditMode] = useState(false);
   return (

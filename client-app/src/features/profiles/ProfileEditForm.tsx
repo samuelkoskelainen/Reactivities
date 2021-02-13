@@ -4,7 +4,6 @@ import {combineValidators, isRequired} from 'revalidate';
 import {Form, Button} from 'semantic-ui-react';
 import TextInput from '../../app/common/form/TextInput';
 import TextAreaInput from '../../app/common/form/TextAreaInput';
-import { observer } from 'mobx-react-lite';
 import {IProfile} from '../../app/models/profile';
 
 const validate = combineValidators({
